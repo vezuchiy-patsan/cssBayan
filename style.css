@@ -100,4 +100,7 @@ div[class^="meme_accordion"] a:focus .head_accord p, div[class^="meme_accordion"
     div[class^="meme_accordion"] a:focus .meme_img{
         width: 87%;
     }
+    p{
+        font-size: 1rem;
+    }
 }
