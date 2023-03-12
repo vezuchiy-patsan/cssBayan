@@ -36,25 +36,10 @@ div[class^="meme_accordion"] a:focus .head_accord .clOp>img{
     transform: rotate(45deg);
     transition: .3s;
 }
-div[class^="meme_accordion"]:hover .meme_img{
-    height: 40vh;
-    margin-bottom: 1em;
-    transition: all .1s linear;
-}
 div[class^="meme_accordion"] a:focus .head_accord p, div[class^="meme_accordion"] a:focus .head_accord .clOp>img{
     filter: invert(28%) sepia(73%) saturate(1189%) hue-rotate(-16deg) brightness(117%) contrast(115%)
 }
-div[class^="meme_accordion"]:hover .head_accord p, div[class^="meme_accordion"]:hover .head_accord .clOp>img{
-    filter: invert(28%) sepia(73%) saturate(1189%) hue-rotate(-16deg) brightness(117%) contrast(115%)
-} 
-div[class^="meme_accordion"]:not(:hover) .head_accord .clOp>img{
-    transform: rotate(0deg);
-    transition: .3s;
-}
-div[class^="meme_accordion"]:hover .head_accord .clOp>img{
-    transform: rotate(45deg);
-    transition: .3s;
-}
+
 .meme_img{
     width: 60%;
     height: 0;
@@ -68,7 +53,50 @@ div[class^="meme_accordion"]:hover .head_accord .clOp>img{
     display: block;
     margin: 0 auto;
 }
-
+@media (min-width:1000px) {
+    div[class^="meme_accordion"]:hover .meme_img{
+        height: 40vh;
+        margin-bottom: 1em;
+        transition: all .1s linear;
+    }
+    div[class^="meme_accordion"]:hover .head_accord p, div[class^="meme_accordion"]:hover .head_accord .clOp>img{
+        filter: invert(28%) sepia(73%) saturate(1189%) hue-rotate(-16deg) brightness(117%) contrast(115%)
+    } 
+    div[class^="meme_accordion"]:not(:hover) .head_accord .clOp>img{
+        transform: rotate(0deg);
+        transition: .3s;
+    }
+    div[class^="meme_accordion"]:hover .head_accord .clOp>img{
+        transform: rotate(45deg);
+        transition: .3s;
+    }
+}
 @media (max-width: 1400px) {
-    
+    div[class^="meme_accordion"] a:focus .meme_img{
+        height: 50vh;
+        width: 65%;
+    }
+    div[class^="meme_accordion"]:hover .meme_img{
+        height: 50vh;
+    }
+}
+@media (max-width: 920px) {
+    div[class^="meme_accordion"] a:focus .meme_img{
+        width: 70%;
+    }
+}
+@media (max-width: 720px) {
+    div[class^="meme_accordion"] a:focus .meme_img{
+        width: 77%;
+    }
+}
+@media (max-width: 520px) {
+    section{
+        width: 100%;
+    }
+}
+@media (max-width: 420px) {
+    div[class^="meme_accordion"] a:focus .meme_img{
+        width: 87%;
+    }
 }
