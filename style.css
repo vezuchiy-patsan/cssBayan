@@ -6,7 +6,7 @@ section{
     margin: 0 auto;
 }
 p{
-    font-size: 18px;
+    font-size: 1.25rem;
     line-height: 2;
     font-weight: bold;
 }
@@ -15,7 +15,7 @@ a{
     color:inherit
 }
 .line{
-    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border: .1vh solid rgba(0, 0, 0, 0.5);
 }
 .head_accord{
     display: flex;
@@ -26,8 +26,8 @@ a{
 }
 
 div[class^="meme_accordion"] a:focus .meme_img{
-    height: 400px;
-    margin-bottom: 20px;
+    height: 40vh;
+    margin-bottom: 1em;
     transition: all .1s linear;
 }
 div[class^="meme_accordion"] a:focus .head_accord .clOp>img{
@@ -35,8 +35,8 @@ div[class^="meme_accordion"] a:focus .head_accord .clOp>img{
     transition: .3s;
 }
 div[class^="meme_accordion"]:hover .meme_img{
-    height: 400px;
-    margin-bottom: 20px;
+    height: 40vh;
+    margin-bottom: 1em;
     transition: all .1s linear;
 }
 div[class^="meme_accordion"] a:focus .head_accord p, div[class^="meme_accordion"] a:focus .head_accord .clOp>img{
